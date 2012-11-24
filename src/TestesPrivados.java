@@ -1,6 +1,7 @@
 
 public class TestesPrivados {
 	private int contadorNaoUtilizado;
+	@SuppressWarnings("unused")
 	private void metodoNaoInvocado() {
 	}
 	/**
@@ -8,8 +9,13 @@ public class TestesPrivados {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.printscreen(teste);	
-		
+		System.nanoTime();
+	}
+	public int getContadorNaoUtilizado() {
+		return contadorNaoUtilizado;
+	}
+	public void setContadorNaoUtilizado(int contadorNaoUtilizado) {
+		this.contadorNaoUtilizado = contadorNaoUtilizado;
 	}
 
 }
